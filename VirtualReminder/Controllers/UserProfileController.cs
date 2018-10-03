@@ -34,15 +34,18 @@ namespace VirtualReminder.Controllers
         }
 
 
-        public string CheckLogin(string UserName, string Password)
+        public void CheckLogin(string UserName, string Password)
         {
-            if (UserName == "Jens" && Password == "1234")
+            if (UserName == "Jens") //Skal tjekke om username er i systemet
             {
-                return "succes"; //More will be added later 
+                if (Password == "1234") //Skal tjekker om password matcher det username
+                {
+                    
+                }
             }
             else
             {
-                return "error"; //More will be added later 
+                
             }
         }
 
