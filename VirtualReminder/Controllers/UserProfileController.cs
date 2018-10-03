@@ -38,11 +38,11 @@ namespace VirtualReminder.Controllers
         {
             if (UserName == "Jens" && Password == "1234")
             {
-                return "succes";
+                return "succes"; //More will be added later 
             }
             else
             {
-                return "error";
+                return "error"; //More will be added later 
             }
         }
 
