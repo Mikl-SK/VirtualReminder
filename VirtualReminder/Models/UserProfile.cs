@@ -7,8 +7,12 @@ namespace VirtualReminder.Models
 {
     public class UserProfile
     {
+        #region Properties
         public string UserName { get; set; }
         public string Password { get; set; }
-        public string FamilyName { get; set; }
+        public string PatientName { get; set; }
+        public string PatientFamilyName { get; set; }
+        public int PatientAge { get; set; }
+        #endregion
     }
 }

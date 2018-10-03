@@ -13,6 +13,7 @@ namespace VirtualReminder.Controllers
 
         #endregion
 
+
         #region Public Methods
 
         public static UserProfileController GetInstance()
