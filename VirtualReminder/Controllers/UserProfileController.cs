@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
+using VirtualReminder.Models;
 
 namespace VirtualReminder.Controllers
 {
@@ -13,6 +14,12 @@ namespace VirtualReminder.Controllers
 
         #endregion
 
+        #region Mock Data (Will be deleted later)
+
+        string UserName = "Jens";
+        string Password = "1234";
+
+        #endregion
 
         #region Public Methods
 
@@ -25,6 +32,21 @@ namespace VirtualReminder.Controllers
 
             return _ControllerInstance;
         }
+
+
+        public string CheckLogin(string UserName, string Password)
+        {
+            if (UserName == "Jens" && Password == "1234")
+            {
+                return "succes";
+            }
+            else
+            {
+                return "error";
+            }
+        }
+
+
 
         public IActionResult Index()
         {
