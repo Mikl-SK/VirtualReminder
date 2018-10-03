@@ -8,9 +8,27 @@ namespace VirtualReminder.Controllers
 {
     public class UserProfileController : Controller
     {
+        #region Properties
+        private static UserProfileController _ControllerInstance { get; set; }
+
+        #endregion
+
+        #region Public Methods
+
+        public static UserProfileController GetInstance()
+        {
+            if (_ControllerInstance == null)
+            {
+                _ControllerInstance = new UserProfileController();
+            }
+
+            return _ControllerInstance;
+        }
+
         public IActionResult Index()
         {
             return View();
         }
+        #endregion
     }
 }
