@@ -1,0 +1,25 @@
+﻿@{ 
+
+}
+
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>Virtual Reminder</title>
+	<link rel="stylesheet" href="~/css/site.css" />
+</head>
+<body>
+	<header id="mainHeader">
+		<div id="logo">
+			<img src="~/images/logoVR.png" />
+			<h1>Virtual Reminder</h1>
+		</div>
+		<h1 class="headerWelcome">Welcome, @ViewData["PatientName"]</h1>
+	</header>
+	<div class="container">
+		@RenderBody()
+	</div>
+</body>
+</html>

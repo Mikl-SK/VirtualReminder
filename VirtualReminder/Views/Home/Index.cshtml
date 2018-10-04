@@ -1,0 +1,40 @@
+﻿@using VirtualReminder.Models
+
+@model List<Reminder>
+
+@{
+	Layout = "_Layout";
+
+}
+<div id="exercises">
+	<div class="exercise">
+		<img src="~/images/exercise-training.png" />
+		<p>Training exercises</p>
+	</div>
+	<div class="exercise">
+		<img src="~/images/exercise-mind.png" />
+		<p>Mind exercises</p>
+	</div>
+	<div class="exercise">
+		<img src="~/images/exercise-social.png" />
+		<p>Social exercises</p>
+	</div>
+</div>
+<div id="reminderMenu">
+	<div id="reminderPosts">
+		@foreach (var reminder in Model)
+		{
+			<div class="reminder">
+				<h1 class="time">@reminder.StartTime - @reminder.EndTime</h1>
+				<h1 class="title">@reminder.Title</h1>
+				<p class="content">@reminder.Content</p>
+				<p class="createdBy">Created by: @reminder.CreatedBy</p>
+			</div>
+		}
+	</div>
+	<div id="reminderButtons">
+		<button id="addReminder">Add Reminder</button>
+		<button id="showCalendar">Show Reminder</button>
+	</div>
+</div>
+<div class="clear" />
