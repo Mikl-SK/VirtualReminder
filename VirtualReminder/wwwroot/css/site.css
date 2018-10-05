@@ -187,3 +187,67 @@
 		-moz-box-shadow: 0 0 15px 2px rgba(50,205,50,1);
 		box-shadow: 0 0 15px 2px rgba(50,205,50,1);
 	}
+
+.popup {
+	visibility: hidden;
+	position: fixed;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	background-color: rgba(0,0,0,0.4);
+	z-index: 99999;
+	transition: opacity 400ms linear;
+}
+
+.popup:target {
+	pointer-events: auto;
+}
+
+
+.addReminder {
+	height: 500px;
+	width: 600px;
+	background-color: white;
+	border: 2px solid black;
+	margin: auto;
+	margin-top: 150px;
+	text-align: center;
+	pointer-events: auto;
+}
+.addReminder .closeButton {
+	position: absolute;
+	height: 50px;
+	width: 50px;
+	margin: -25px 275px;
+	border: none;
+	border-radius: 50%;
+}
+
+.addReminderColumn {
+	height: 100%;
+	width: 49%;
+}
+	.addReminderColumn.left {
+		float: left;
+		border-right: 2px solid black;
+	}
+	.addTitle {
+		width: 95%;
+		height: 20%;
+		border-bottom: 2px solid black;
+	}
+	.addContent {
+		width: 95%;
+		height: 75%;
+	}
+
+	.addReminderColumn.right {
+		float: right;
+	}
+
+	.miniCalendar {
+		width: 95%;
+		height: 40%;
+		border: 1px solid black;
+	}

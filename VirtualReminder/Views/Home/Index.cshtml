@@ -6,6 +6,19 @@
 	Layout = "_Layout";
 
 }
+<script type="text/javascript">
+
+	function ShowAddReminderMenu()
+	{
+		document.querySelector(".popup").style.visibility = "visible";
+	}
+
+	function CloseAddReminderMenu()
+	{
+		document.querySelector(".popup").style.visibility = "hidden";
+	}
+</script>
+
 <div id="exercises">
 	<div class="exercise">
 		<img src="~/images/exercise-training.png" />
@@ -33,8 +46,27 @@
 		}
 	</div>
 	<div id="reminderButtons">
-		<button id="addReminder">Add Reminder</button>
+		<button id="addReminder" onclick="ShowAddReminderMenu()">Add Reminder</button>
 		<button id="showCalendar">Show Calendar</button>
 	</div>
 </div>
 <div class="clear" />
+
+<div class="popup">
+	<div class="addReminder">
+		<button class="closeButton" onclick="CloseAddReminderMenu()">X</button>
+		<div class="addReminderColumn left">
+			<textarea class="addTitle">Title...</textarea>
+			<textarea class="addContent">Discription...</textarea>
+		</div>
+		<div class="addReminderColumn right">
+			<p>Choose date:</p>
+			<div class="miniCalendar">
+
+			</div>
+			<textarea>Choose start time.</textarea>
+			<textarea>Choose end time.</textarea>
+		</div>
+		<div class="clear" />
+	</div>
+</div>
