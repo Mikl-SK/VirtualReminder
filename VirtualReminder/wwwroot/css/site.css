@@ -2,7 +2,7 @@
 	padding: 0;
 	margin: 0;
 	background-color: #ADD8E6;
-	font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 	-webkit-touch-callout: none; /* iOS Safari */
 	-webkit-user-select: none; /* Safari */
 	-moz-user-select: none; /* Firefox */
@@ -41,6 +41,7 @@
 
 .headerWelcome {
 	float: left;
+	margin-top: 15px;
 	padding-left: 3em;
 }
 
@@ -56,6 +57,7 @@
 	}
 
 	#logo h1 {
+		margin-top: 15px;
 		float: left;
 		color: #82afc6;
 		text-shadow: -1px 0 #61cfd8, 0 1px #61cfd8, 1px 0 #61cfd8, 0 -1px #61cfd8;
@@ -119,8 +121,8 @@
 		margin: 1.5em 0 0 0;
 		padding: 0.3em 0;
 		font-size: 30px;
-		color: white;
-		text-shadow: -3px 0 black, 0 3px black, 3px 0 black, 0 -3px black;
+		color: black;
+		font-weight: bolder;
 	}
 
 .reminder {
